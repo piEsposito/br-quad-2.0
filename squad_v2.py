@@ -12,23 +12,20 @@ _CITATION = """\
        author = {{Esposito}, Wladimir and {Esposito}, Piero and {Tamais},
                  Ana Laura and {Gatti}, Daniel},
         title = "{BrQuAD - Brazilian
-                  Question-Answering Dataset: Cria¸c~ao de
-                  dataset para benchmark de modelos de
+                  Question-Answering Dataset: Dataset para benchmark de modelos de
                   Machine Learning para question-answering em
-                  Portugu^es brasileiro}",
+                  Portugu^es brasileiro traduzindo o SQuAD com Google Cloud API}",
          year = 2020,
 }
 """
 
 _DESCRIPTION = """\
-combines the 100,000 questions in SQuAD1.1 with over 50,000 unanswerable questions written adversarially by crowdworkers
- to look similar to answerable ones. To do well on SQuAD2.0, systems must not only answer questions when possible, but
- also determine when no answer is supported by the paragraph and abstain from answering.
+Translates SQuAD 2.0 from english to portuguese using Google Cloud API
 """
 
-_URL = "https://rajpurkar.github.io/SQuAD-explorer/dataset/"
-_DEV_FILE = "dev-v2.0.json"
-_TRAINING_FILE = "train-v2.0.json"
+_URL = "https://github.com/piEsposito/br-quad-2.0/blob/main/data/"
+_DEV_FILE = "brquad-gte-dev-v2.0.json"
+_TRAINING_FILE = "brquad-gte-dev-v2.0.json"
 
 
 class SquadV2Config(datasets.BuilderConfig):
